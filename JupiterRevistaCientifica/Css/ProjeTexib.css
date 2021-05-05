@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+browser-context: 16;
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+body {
+  background: #ddd;
+}
+  .sidebar{
+    position: relative;
+    z-index: 100;
+    float: left;
+    top: 100px;
+    font-family: 'Open Sans', sans-serif;
+    }
+  
+    a {
+      white-space: nowrap;
+      color: #8e8e8e;
+      font-weight: 400;
+      font-size: em(14);
+}
+
+.navbar-light .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-toggler {
+  background: #fff;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-link {
+  padding: .2rem 1rem;
+}
+
+.nav-link.active,.nav-link:focus{
+  color: #fff;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+
+.Delint{
+    text-align: justify;
+    position: absolute;
+    overflow: scroll;
+     height: 600px;
+    width: 825px;
+    float: left;
+ 
+   
+   
+}
+
+#NavVert{
+   display: center; 
+ align-items: center;
+    float: left;   
+ 
+  
+    
+    
+}
+
+.contatiner{
+        
+  display: contents; 
+  align-items: center;
+
+    
+}
+
