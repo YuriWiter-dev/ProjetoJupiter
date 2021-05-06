@@ -1,8 +1,8 @@
-<!--?php
+<?php
  
      
 //echo $_SESSION['login'];
-?>-->
+?>
 <!doctype html>
 <html lang="pt-br">
 
@@ -58,7 +58,7 @@
 
  
 
-  <!-- Css´s grinds -->
+
   <h1>Ultimos Projetos</h1> <br> <br>
   <div class="corpo">
     <div class="container">
@@ -73,14 +73,11 @@
                 $titulo = $row['titulo'];
                 $cod = $row['cod'];
                 $img = rand(1,5);
-            
           ?>
-          
         <div class="col-md-4" style="margin-bottom:2rem;">
           <div class="card shadow " style="width: 20rem; height:27rem; ">
             <div class="inner">
               <img  src="../imgs/paraProj/<?php echo $img;?>.jpg" class="card-img-top" alt="...">
-
             </div>
             <div class="card-body">
               <h5 class="card-title"><?php echo $titulo; ?></h5>
@@ -88,53 +85,23 @@
               <a href="apresentacaoPro.php?c=<?php echo $cod;?>" class="btn btn-danger bg-gradient-danger">Visualizar</a>
             </div>
           </div>
-
-        
-
       </div> <br>
           <?php }
                 $cont = $cont+1; } ?>
     </div>
   </div>
-
-<!-- Grid Boots-->
-  
-
-
-
-
-
-  <!-- Fim do Site -->
-  <!-- Footer -->
   <footer class="page-footer font-small mdb-color lighten-3 pt-4 bg-warning mt-4">
-
-    <!-- Footer Links -->
     <div class="container text-center text-md-left">
-
-      <!-- Grid row -->
       <div class="row">
-
-        <!-- Grid column -->
         <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
-          
-          <!-- Content -->
           <h5 class="font-weight-bold text-uppercase mb-4"></i>Sobre a equipe </h5>
           <p>Esta revista foi desenvolvida por Andreia Simões, Geovane Campos, Isadora Dias, Samara Eduarda e Yuri Witter para o Trabalho de Conclusão de Curso do Técnico em Informática da Universidade Federal de Viçosa - Campus Florestal.
               Aproveitem!
-              
           </p>
-
         </div>
-        <!-- Grid column -->
-
         <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
         <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-
-          <!-- Links -->
           <h5 class="font-weight-bold text-uppercase mb-4">Tópicos</h5>
-
           <ul class="list-unstyled">
             <li>
               <p>
@@ -156,20 +123,11 @@
                 <a href="explorar.php">Artigos</a>
               </p>
             </li>
-           
           </ul>
-
         </div>
-        <!-- Grid column -->
-
         <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
         <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-
-          <!-- Contact details -->
           <h5 class="font-weight-bold text-uppercase mb-4">Sobre Nós</h5>
-
           <ul class="list-unstyled">
             <li>
               <p>
@@ -188,45 +146,33 @@
                 <i class="fas fa-print mr-3"></i>Disponível em breve</p>
             </li>
           </ul>
-
         </div>
-        <!-- Grid column -->
-
         <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
         <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-
-          <!-- Social buttons -->
           <h5 class="font-weight-bold text-uppercase mb-4">Redes Sociais</h5>
-
-          <!-- Facebook -->
           <a type="button" class="btn-floating btn-fb">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <!-- Twitter -->
           <a type="button" class="btn-floating btn-tw">
             <i class="fab fa-twitter"></i>
           </a>
-          <!-- Google +-->
           <a type="button" class="btn-floating btn-gplus">
             <i class="fab fa-google-plus-g"></i>
           </a>
-          <!-- Dribbble -->
           <a type="button" class="btn-floating btn-instagram">
             <i class="fab fa-instagram fa-fw pink-text"></i>
           </a>
 
         </div>
-        <!-- Grid column -->
+      
 
       </div>
-      <!-- Grid row -->
+      
 
     </div>
-    <!-- Footer Links -->
+    
 
-    <!-- Copyright -->
+  
     <div class="footer-copyright text-center py-3">Jup1t3r &copy; | 2019
     </div>
   </footer>
@@ -238,8 +184,5 @@
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-
 </body>
-
 </html>
