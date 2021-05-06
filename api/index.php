@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-   <!-- ?php require_once("menuCabecalho.php");?>-->
+    <?php require_once("menuCabecalho.php");?>
 
 <body>
 
@@ -60,7 +60,37 @@
  
 
 
-  
+  <h1>Ultimos Projetos</h1> <br> <br>
+  <div class="corpo">
+    <div class="container">
+      <div class=" row justify-content-center space-beetween">
+          <?php 
+            require("../dao/DAO_Projeto.php");
+            $r = selecionarDecP();
+            $cont = 0;
+            while($row = mysqli_fetch_array($r)){
+                if($cont<6){
+                $descricao = $row['descricao'];
+                $titulo = $row['titulo'];
+                $cod = $row['cod'];
+                $img = rand(1,5);
+          ?>
+        <div class="col-md-4" style="margin-bottom:2rem;">
+          <div class="card shadow " style="width: 20rem; height:27rem; ">
+            <div class="inner">
+              <img  src="../imgs/paraProj/<?php echo $img;?>.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><?php echo $titulo; ?></h5>
+              <p class="card-text"><?php echo $descricao; ?></p>
+              <a href="apresentacaoPro.php?c=<?php echo $cod;?>" class="btn btn-danger bg-gradient-danger">Visualizar</a>
+            </div>
+          </div>
+      </div> <br>
+          <?php }
+                $cont = $cont+1; } ?>
+    </div>
+  </div>
   <footer class="page-footer font-small mdb-color lighten-3 pt-4 bg-warning mt-4">
     <div class="container text-center text-md-left">
       <div class="row">
